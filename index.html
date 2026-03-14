@@ -111,6 +111,9 @@
   .art-table th { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); text-align: left; padding: 10px 16px; border-bottom: 1px solid var(--rule); }
   .art-table td { padding: 14px 16px; border-bottom: 1px solid rgba(42,33,24,0.08); font-size: 14px; color: var(--text-mid); vertical-align: top; }
   .art-table td:first-child { font-family: 'Cormorant Garamond', serif; font-size: 16px; color: var(--text); }
+  @media (max-width: 900px) {
+    .art-table .col-medium, .art-table .col-palette { display: none; }
+  }
 
   .season-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
   .season { padding: 40px 32px; border-right: 1px solid var(--rule); }
@@ -217,13 +220,13 @@
   <h2>The Art</h2>
   <p>Five pieces that cover the Japandi palette almost perfectly — without trying. One significant piece per room, given space and silence around it.</p>
   <table class="art-table">
-    <thead><tr><th>Piece</th><th>Medium</th><th>Palette</th><th>Room</th><th>Position</th></tr></thead>
+    <thead><tr><th>Piece</th><th class="col-medium">Medium</th><th class="col-palette">Palette</th><th>Room</th><th>Position</th></tr></thead>
     <tbody>
-      <tr><td>Graphite Portrait</td><td>Pencil on paper, A4</td><td>Warm grey, ivory</td><td>Hallway</td><td>Above radiator, right wall</td></tr>
-      <tr><td>Wagasa in Rain</td><td>Japanese woodblock print</td><td>Monochrome + saffron</td><td>Living room</td><td>East wall, above sideboard</td></tr>
-      <tr><td>Cranes & Pine Kakejiku</td><td>Ink on hemp scroll</td><td>Natural linen, forest green</td><td>Living room</td><td>Perpendicular wall</td></tr>
-      <tr><td>Cyanotype Figure</td><td>Cyanotype print, A3</td><td>Prussian blue, ivory</td><td>The Bedroom</td><td>Wall facing foot of bed</td></tr>
-      <tr><td>Woodblock Landscape</td><td>Linocut / woodblock, A3</td><td>Forest green, teal, gold</td><td>Workroom</td><td>Chimney breast, above Tylko</td></tr>
+      <tr><td>Graphite Portrait</td><td class="col-medium">Pencil on paper, A4</td><td class="col-palette">Warm grey, ivory</td><td>Hallway</td><td>Above radiator, right wall</td></tr>
+      <tr><td>Wagasa in Rain</td><td class="col-medium">Japanese woodblock print</td><td class="col-palette">Monochrome + saffron</td><td>Living room</td><td>East wall, above sideboard</td></tr>
+      <tr><td>Cranes & Pine Kakejiku</td><td class="col-medium">Ink on hemp scroll</td><td class="col-palette">Natural linen, forest green</td><td>Living room</td><td>Perpendicular wall</td></tr>
+      <tr><td>Cyanotype Figure</td><td class="col-medium">Cyanotype print, A3</td><td class="col-palette">Prussian blue, ivory</td><td>The Bedroom</td><td>Wall facing foot of bed</td></tr>
+      <tr><td>Woodblock Landscape</td><td class="col-medium">Linocut / woodblock, A3</td><td class="col-palette">Forest green, teal, gold</td><td>Workroom</td><td>Chimney breast, above Tylko</td></tr>
     </tbody>
   </table>
 </section>
